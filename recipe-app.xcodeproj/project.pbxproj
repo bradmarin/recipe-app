@@ -11,6 +11,8 @@
 		A29C73182644486300D63E1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C73172644486300D63E1D /* ContentView.swift */; };
 		A29C731A2644486500D63E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29C73192644486500D63E1D /* Assets.xcassets */; };
 		A29C731D2644486500D63E1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29C731C2644486500D63E1D /* Preview Assets.xcassets */; };
+		A29C732726444B1400D63E1D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C732626444B1400D63E1D /* ListView.swift */; };
+		A29C732926444B2D00D63E1D /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C732826444B2D00D63E1D /* FavoriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A29C73192644486500D63E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A29C731C2644486500D63E1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A29C731E2644486500D63E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29C732626444B1400D63E1D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A29C732826444B2D00D63E1D /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				A29C73192644486500D63E1D /* Assets.xcassets */,
 				A29C731E2644486500D63E1D /* Info.plist */,
 				A29C731B2644486500D63E1D /* Preview Content */,
+				A29C732626444B1400D63E1D /* ListView.swift */,
+				A29C732826444B2D00D63E1D /* FavoriteView.swift */,
 			);
 			path = "recipe-app";
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29C732926444B2D00D63E1D /* FavoriteView.swift in Sources */,
 				A29C73182644486300D63E1D /* ContentView.swift in Sources */,
 				A29C73162644486300D63E1D /* recipe_appApp.swift in Sources */,
+				A29C732726444B1400D63E1D /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

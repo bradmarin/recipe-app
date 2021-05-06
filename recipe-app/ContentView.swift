@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 0;
     var body: some View {
-        Text("Hello, world! This is my recipe app!")
-            .padding()
+        TabView (selection: $selection) {
+            ListView()
+                .tabItem {
+                    VStack(alignment: .center, spacing: nil, content: {
+                        Image(systemName: "archivebox.fill")
+                        Text("Recipes")
+                    })
+                }
+                .tag(0)
+            FavoriteView()
+                .tabItem {
+                    VStack(alignment: .center, spacing: nil, content: {
+                        Image(systemName: "star.fill")
+                        Text("Favorites")
+                    })
+                }
+                .tag(1)
+        }
     }
 }
 
