@@ -19,11 +19,7 @@ struct CachedImageView: View {
     }
     
     var body: some View {
-        if loader.isLoading {
-            return AnyView(ActivityIndicator(style: .medium))
-        } else {
-            return AnyView(Image(uiImage: loader.image).resizable().renderingMode(.original).aspectRatio(contentMode: .fill))
-        }
+        AnyView(Image(uiImage: loader.image).resizable().renderingMode(.original).aspectRatio(contentMode: .fit))
     }
 }
 

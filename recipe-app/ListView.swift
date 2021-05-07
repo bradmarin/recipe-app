@@ -11,29 +11,24 @@ struct ListView: View {
     @ObservedObject var viewModel = RecipeViewModel()
     
     var body: some View {
-        if viewModel.isLoading {
-            return AnyView(ActivityIndicator(style: .medium))
-        } else {
-            return AnyView(
-                NavigationView {
-                    List(viewModel.recipes, id: \.href) { recipe in
-                        NavigationLink(
-                            destination: WebView(request: URLRequest(url: recipe.detail))) {
-                            ZStack (alignment: .bottomLeading){
-                                CachedImageView(recipe.thumb)
-                                VStack(alignment: .leading)  {
-                                    Text(recipe.title)
-                                        .font(.largeTitle)
-                                        .foregroundColor(.white)
-                                        .padding()
-                                }
-                            }
-                            .buttonStyle(PlainButtonStyle())
+        NavigationView {
+            List(viewModel.recipes, id: \.href) { recipe in
+                NavigationLink (destination: RecipeDetailView(recipe: recipe)) {
+                    HStack{
+                        CachedImageView(recipe.thumb)
+                            .mask(Circle())
+                            .frame(width: 80)
+                        VStack(alignment: .leading)  {
+                            Text(recipe.title)
+                                .font(.largeTitle)
+                                .foregroundColor(.black)
+                                .padding()
                         }
                     }
-                    .navigationBarTitle(Text("All Recipes"))
+                    .buttonStyle(PlainButtonStyle())
                 }
-            )
+            }
+            .navigationBarTitle(Text("All Recipes"))
         }
     }
 }

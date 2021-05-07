@@ -22,7 +22,7 @@ struct ContentView: View {
             FavoriteView()
                 .tabItem {
                     VStack(alignment: .center, spacing: nil, content: {
-                        Image(systemName: "star.fill")
+                        Image(systemName: "suit.heart.fill")
                         Text("Favorites")
                     })
                 }
