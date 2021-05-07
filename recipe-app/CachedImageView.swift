@@ -2,7 +2,7 @@
 //  CachedImageView.swift
 //  recipe-app
 //
-//  Created by Brad on 5/6/21.
+//  Created by Brad on 5/1/21.
 //
 
 import Foundation
@@ -22,7 +22,7 @@ struct CachedImageView: View {
         if loader.isLoading {
             return AnyView(ActivityIndicator(style: .medium))
         } else {
-           return AnyView(Image(uiImage: loader.image).resizable().aspectRatio(contentMode: .fit))
+            return AnyView(Image(uiImage: loader.image).resizable().renderingMode(.original).aspectRatio(contentMode: .fill))
         }
     }
 }

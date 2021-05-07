@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  recipe-app
 //
-//  Created by Brad on 5/6/21.
+//  Created by Brad on 5/1/21.
 //
 
 import SwiftUI
@@ -14,7 +14,7 @@ struct ContentView: View {
             ListView()
                 .tabItem {
                     VStack(alignment: .center, spacing: nil, content: {
-                        Image(systemName: "archivebox.fill")
+                        Image(systemName: "list.bullet")
                         Text("Recipes")
                     })
                 }

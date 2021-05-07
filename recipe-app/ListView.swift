@@ -2,7 +2,7 @@
 //  ListView.swift
 //  recipe-app
 //
-//  Created by Brad on 5/6/21.
+//  Created by Brad on 5/1/21.
 //
 
 import SwiftUI
@@ -19,16 +19,13 @@ struct ListView: View {
                     List(viewModel.recipes, id: \.href) { recipe in
                         NavigationLink(
                             destination: WebView(request: URLRequest(url: recipe.detail))) {
-                            HStack {
+                            ZStack (alignment: .bottomLeading){
                                 CachedImageView(recipe.thumb)
-                                    .mask(Circle())
-                                    .frame(width: 60)
                                 VStack(alignment: .leading)  {
                                     Text(recipe.title)
-                                        .font(.title)
-                                        .lineLimit(2)
-                                    Text(recipe.ingredients)
-                                        .lineLimit(nil)
+                                        .font(.largeTitle)
+                                        .foregroundColor(.white)
+                                        .padding()
                                 }
                             }
                             .buttonStyle(PlainButtonStyle())
