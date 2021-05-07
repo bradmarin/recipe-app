@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ListView: View {
+    @State private var searchText = ""
+    @State private var showCancelButton: Bool = false
+    
     var body: some View {
-        Text("List View")
+        NavigationView {
+            List {
+                
+            }
+            .navigationBarTitle(Text("All Recipes"))
+        }
     }
 }
 
