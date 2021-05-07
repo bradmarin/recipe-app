@@ -63,7 +63,7 @@ extension CachedImageView {
                 } else {
                     completion(.failure(NSError(domain: "", code: -1, userInfo: nil)))
                 }
-            }
+            }.resume()
         }
     }
 }

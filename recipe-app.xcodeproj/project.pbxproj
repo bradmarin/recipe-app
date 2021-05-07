@@ -18,6 +18,7 @@
 		A29C732F2644BB3000D63E1D /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C732E2644BB3000D63E1D /* RecipeViewModel.swift */; };
 		A29C73312644BCC700D63E1D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C73302644BCC700D63E1D /* ActivityIndicator.swift */; };
 		A29C73332644BD9F00D63E1D /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C73322644BD9F00D63E1D /* CachedImageView.swift */; };
+		A29C73352644CB6A00D63E1D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C73342644CB6A00D63E1D /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A29C732E2644BB3000D63E1D /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		A29C73302644BCC700D63E1D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		A29C73322644BD9F00D63E1D /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		A29C73342644CB6A00D63E1D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				A29C732E2644BB3000D63E1D /* RecipeViewModel.swift */,
 				A29C73302644BCC700D63E1D /* ActivityIndicator.swift */,
 				A29C73322644BD9F00D63E1D /* CachedImageView.swift */,
+				A29C73342644CB6A00D63E1D /* WebView.swift */,
 			);
 			path = "recipe-app";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A29C732926444B2D00D63E1D /* FavoriteView.swift in Sources */,
+				A29C73352644CB6A00D63E1D /* WebView.swift in Sources */,
 				A29C732D2644B99F00D63E1D /* RecipeService.swift in Sources */,
 				A29C73182644486300D63E1D /* ContentView.swift in Sources */,
 				A29C732F2644BB3000D63E1D /* RecipeViewModel.swift in Sources */,

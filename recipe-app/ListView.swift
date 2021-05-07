@@ -8,15 +8,35 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var searchText = ""
-    @State private var showCancelButton: Bool = false
+    @ObservedObject var viewModel = RecipeViewModel()
     
     var body: some View {
-        NavigationView {
-            List {
-                
-            }
-            .navigationBarTitle(Text("All Recipes"))
+        if viewModel.isLoading {
+            return AnyView(ActivityIndicator(style: .medium))
+        } else {
+            return AnyView(
+                NavigationView {
+                    List(viewModel.recipes, id: \.href) { recipe in
+                        NavigationLink(
+                            destination: WebView(request: URLRequest(url: recipe.detail))) {
+                            HStack {
+                                CachedImageView(recipe.thumb)
+                                    .mask(Circle())
+                                    .frame(width: 60)
+                                VStack(alignment: .leading)  {
+                                    Text(recipe.title)
+                                        .font(.title)
+                                        .lineLimit(2)
+                                    Text(recipe.ingredients)
+                                        .lineLimit(nil)
+                                }
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                        }
+                    }
+                    .navigationBarTitle(Text("All Recipes"))
+                }
+            )
         }
     }
 }
