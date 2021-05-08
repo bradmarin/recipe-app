@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct FavoriteView: View {
+    @ObservedObject var viewModel = RecipeViewModel()
+    
     var body: some View {
         NavigationView {
-            List {
-                
+            List(viewModel.recipes, id: \.href) { recipe in
+                Text("Test")
             }
-            .navigationBarTitle(Text("Favorite Recipes"))
+            .navigationBarTitle(Text("Favorites"))
         }
     }
 }

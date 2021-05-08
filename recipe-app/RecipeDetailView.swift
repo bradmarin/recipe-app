@@ -2,7 +2,7 @@
 //  RecipeDetailView.swift
 //  recipe-app
 //
-//  Created by Brad on 5/7/21.
+//  Created by Brad on 5/1/21.
 //
 
 import SwiftUI
@@ -21,10 +21,15 @@ struct RecipeDetailView: View {
                         .padding()
                     VStack (alignment: .leading, spacing: 8) {
                         Text(recipe.title)
-                            .font(.largeTitle)
+                            .font(.title)
+                            .fontWeight(.bold)
                             .padding(1)
-                        Text("Ingredients: \(recipe.ingredients)")
-                            .padding(1)
+                        HStack {
+                            Text("Ingredients: ")
+                                .fontWeight(.bold)
+                                .padding(1)
+                            Text(recipe.ingredients)
+                        }
                         NavigationLink(destination: WebView(request: URLRequest(url: recipe.detail))) {
                             Text("Recipe Instructions")
                                 .fontWeight(.bold)

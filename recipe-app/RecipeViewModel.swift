@@ -10,7 +10,6 @@ import Foundation
 class RecipeViewModel: ObservableObject {
     
     @Published var recipes = [Recipe]()
-    @Published var isLoading = false
     
     private let service = RecipeService()
     
@@ -19,10 +18,8 @@ class RecipeViewModel: ObservableObject {
     }
     
     private func loadData() {
-        isLoading = true
         service.getRecipes{ [weak self] result in
             DispatchQueue.main.async {
-                self?.isLoading = false
                 switch result {
                 case .failure(let error):
                     print(error.localizedDescription)
