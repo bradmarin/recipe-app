@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct LunchView: View {
+    @ObservedObject var viewModel = LunchViewModel()
+    
     var body: some View {
         NavigationView {
-            List() {
-                
+            List(viewModel.lunches, id: \.href) { lunch in
+                NavigationLink (destination: LunchDetailView(lunch: lunch)) {
+                    HStack{
+                        VStack(alignment: .leading)  {
+                            Text(lunch.title)
+                                .font(.largeTitle)
+                                .foregroundColor(.black)
+                                .padding()
+                        }
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
             }
             .navigationBarTitle(Text("Lunch Recipes"))
         }

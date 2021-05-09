@@ -14,6 +14,14 @@
 		A27693E02647640C00D0CAAF /* Breakfast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693DF2647640C00D0CAAF /* Breakfast.swift */; };
 		A27693E2264764F800D0CAAF /* BreakfastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693E1264764F800D0CAAF /* BreakfastViewModel.swift */; };
 		A27693E426476F3C00D0CAAF /* BreakfastDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693E326476F3C00D0CAAF /* BreakfastDetailView.swift */; };
+		A27693E62647781500D0CAAF /* Lunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693E52647781500D0CAAF /* Lunch.swift */; };
+		A27693E82647784100D0CAAF /* LunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693E72647784100D0CAAF /* LunchService.swift */; };
+		A27693EA2647788800D0CAAF /* LunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693E92647788800D0CAAF /* LunchViewModel.swift */; };
+		A27693EC2647797300D0CAAF /* LunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693EB2647797300D0CAAF /* LunchDetailView.swift */; };
+		A27693EE26477A5200D0CAAF /* Dinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693ED26477A5200D0CAAF /* Dinner.swift */; };
+		A27693F026477A7000D0CAAF /* DinnerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693EF26477A7000D0CAAF /* DinnerService.swift */; };
+		A27693F226477AA200D0CAAF /* DinnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693F126477AA200D0CAAF /* DinnerViewModel.swift */; };
+		A27693F426477AF700D0CAAF /* DinnerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27693F326477AF700D0CAAF /* DinnerDetailView.swift */; };
 		A29C73162644486300D63E1D /* recipe_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C73152644486300D63E1D /* recipe_appApp.swift */; };
 		A29C73182644486300D63E1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C73172644486300D63E1D /* ContentView.swift */; };
 		A29C731A2644486500D63E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29C73192644486500D63E1D /* Assets.xcassets */; };
@@ -36,6 +44,14 @@
 		A27693DF2647640C00D0CAAF /* Breakfast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakfast.swift; sourceTree = "<group>"; };
 		A27693E1264764F800D0CAAF /* BreakfastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastViewModel.swift; sourceTree = "<group>"; };
 		A27693E326476F3C00D0CAAF /* BreakfastDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastDetailView.swift; sourceTree = "<group>"; };
+		A27693E52647781500D0CAAF /* Lunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch.swift; sourceTree = "<group>"; };
+		A27693E72647784100D0CAAF /* LunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchService.swift; sourceTree = "<group>"; };
+		A27693E92647788800D0CAAF /* LunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewModel.swift; sourceTree = "<group>"; };
+		A27693EB2647797300D0CAAF /* LunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchDetailView.swift; sourceTree = "<group>"; };
+		A27693ED26477A5200D0CAAF /* Dinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinner.swift; sourceTree = "<group>"; };
+		A27693EF26477A7000D0CAAF /* DinnerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerService.swift; sourceTree = "<group>"; };
+		A27693F126477AA200D0CAAF /* DinnerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerViewModel.swift; sourceTree = "<group>"; };
+		A27693F326477AF700D0CAAF /* DinnerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerDetailView.swift; sourceTree = "<group>"; };
 		A29C73122644486300D63E1D /* recipe-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recipe-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29C73152644486300D63E1D /* recipe_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe_appApp.swift; sourceTree = "<group>"; };
 		A29C73172644486300D63E1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +88,8 @@
 				A27693D52647618C00D0CAAF /* LunchView.swift */,
 				A27693D72647619400D0CAAF /* DinnerView.swift */,
 				A27693E326476F3C00D0CAAF /* BreakfastDetailView.swift */,
+				A27693EB2647797300D0CAAF /* LunchDetailView.swift */,
+				A27693F326477AF700D0CAAF /* DinnerDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,6 +99,8 @@
 			children = (
 				A29C732E2644BB3000D63E1D /* RecipeViewModel.swift */,
 				A27693E1264764F800D0CAAF /* BreakfastViewModel.swift */,
+				A27693E92647788800D0CAAF /* LunchViewModel.swift */,
+				A27693F126477AA200D0CAAF /* DinnerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -90,6 +110,8 @@
 			children = (
 				A29C732C2644B99F00D63E1D /* RecipeService.swift */,
 				A27693DD264763F400D0CAAF /* BreakfastService.swift */,
+				A27693E72647784100D0CAAF /* LunchService.swift */,
+				A27693EF26477A7000D0CAAF /* DinnerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -99,6 +121,8 @@
 			children = (
 				A29C732A2644B7D600D63E1D /* Recipe.swift */,
 				A27693DF2647640C00D0CAAF /* Breakfast.swift */,
+				A27693E52647781500D0CAAF /* Lunch.swift */,
+				A27693ED26477A5200D0CAAF /* Dinner.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -222,16 +246,24 @@
 				A27693D82647619400D0CAAF /* DinnerView.swift in Sources */,
 				A29C73352644CB6A00D63E1D /* WebView.swift in Sources */,
 				A29C732D2644B99F00D63E1D /* RecipeService.swift in Sources */,
+				A27693EE26477A5200D0CAAF /* Dinner.swift in Sources */,
 				A29C73182644486300D63E1D /* ContentView.swift in Sources */,
 				A29C732F2644BB3000D63E1D /* RecipeViewModel.swift in Sources */,
 				A29C73162644486300D63E1D /* recipe_appApp.swift in Sources */,
 				A27693E426476F3C00D0CAAF /* BreakfastDetailView.swift in Sources */,
+				A27693F226477AA200D0CAAF /* DinnerViewModel.swift in Sources */,
 				A27693D42647613D00D0CAAF /* BreakfastView.swift in Sources */,
+				A27693F026477A7000D0CAAF /* DinnerService.swift in Sources */,
 				A29C732726444B1400D63E1D /* ListView.swift in Sources */,
+				A27693EA2647788800D0CAAF /* LunchViewModel.swift in Sources */,
 				A29C73332644BD9F00D63E1D /* CachedImageView.swift in Sources */,
 				A29C732B2644B7D600D63E1D /* Recipe.swift in Sources */,
+				A27693F426477AF700D0CAAF /* DinnerDetailView.swift in Sources */,
 				A27693D62647618C00D0CAAF /* LunchView.swift in Sources */,
+				A27693E62647781500D0CAAF /* Lunch.swift in Sources */,
+				A27693E82647784100D0CAAF /* LunchService.swift in Sources */,
 				A27693DE264763F400D0CAAF /* BreakfastService.swift in Sources */,
+				A27693EC2647797300D0CAAF /* LunchDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

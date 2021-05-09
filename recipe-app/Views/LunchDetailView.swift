@@ -1,5 +1,5 @@
 //
-//  BreakfastDetailView.swift
+//  LunchDetailView.swift
 //  recipe-app
 //
 //  Created by Brad on 5/8/21.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct BreakfastDetailView: View {
-    var breakfast: Breakfast
+struct LunchDetailView: View {
+    var lunch: Lunch
     
     var body: some View {
         NavigationView {
             ScrollView  {
                 VStack (alignment: .leading, spacing: 16) {
                     VStack (alignment: .leading, spacing: 8) {
-                        Text(breakfast.title)
+                        Text(lunch.title)
                             .font(.title)
                             .fontWeight(.bold)
                             .padding(1)
@@ -23,9 +23,9 @@ struct BreakfastDetailView: View {
                             Text("Ingredients: ")
                                 .fontWeight(.bold)
                                 .padding(1)
-                            Text(breakfast.ingredients)
+                            Text(lunch.ingredients)
                         }
-                        NavigationLink(destination: WebView(request: URLRequest(url: breakfast.detail))) {
+                        NavigationLink(destination: WebView(request: URLRequest(url: lunch.detail))) {
                             Text("Recipe Instructions")
                                 .fontWeight(.bold)
                                 .font(.system(size: 15))
@@ -40,13 +40,13 @@ struct BreakfastDetailView: View {
                 .padding()
             }
         }
-        .navigationBarTitle(Text(breakfast.title), displayMode: .inline)
+        .navigationBarTitle(Text(lunch.title), displayMode: .inline)
             .padding()
     }
 }
 
-struct BreakfastDetailView_Previews: PreviewProvider {
+struct LunchDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BreakfastDetailView(breakfast: Breakfast(title: "Test", href: "Test", ingredients: "Test"))
+        LunchDetailView(lunch: Lunch(title: "Test", href: "Test", ingredients: "Test"))
     }
 }

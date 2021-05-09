@@ -22,7 +22,7 @@ struct ContentView: View {
             BreakfastView()
                 .tabItem {
                     VStack(alignment: .center, spacing: nil, content: {
-                        Image(systemName: "sunrise")
+                        Image(systemName: "sunrise.fill")
                         Text("Breakfast")
                     })
                 }
