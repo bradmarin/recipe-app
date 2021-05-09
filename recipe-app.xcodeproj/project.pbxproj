@@ -82,14 +82,11 @@
 		A27693D92647632F00D0CAAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A29C73382645985800D63E1D /* RecipeDetailView.swift */,
+				A27693F526477CFB00D0CAAF /* DetailViews */,
 				A29C732626444B1400D63E1D /* ListView.swift */,
 				A27693D32647613D00D0CAAF /* BreakfastView.swift */,
 				A27693D52647618C00D0CAAF /* LunchView.swift */,
 				A27693D72647619400D0CAAF /* DinnerView.swift */,
-				A27693E326476F3C00D0CAAF /* BreakfastDetailView.swift */,
-				A27693EB2647797300D0CAAF /* LunchDetailView.swift */,
-				A27693F326477AF700D0CAAF /* DinnerDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +122,17 @@
 				A27693ED26477A5200D0CAAF /* Dinner.swift */,
 			);
 			path = Recipes;
+			sourceTree = "<group>";
+		};
+		A27693F526477CFB00D0CAAF /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				A29C73382645985800D63E1D /* RecipeDetailView.swift */,
+				A27693E326476F3C00D0CAAF /* BreakfastDetailView.swift */,
+				A27693EB2647797300D0CAAF /* LunchDetailView.swift */,
+				A27693F326477AF700D0CAAF /* DinnerDetailView.swift */,
+			);
+			path = DetailViews;
 			sourceTree = "<group>";
 		};
 		A29C73092644486300D63E1D = {
