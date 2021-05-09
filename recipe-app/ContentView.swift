@@ -15,7 +15,7 @@ struct ContentView: View {
                 .tabItem {
                     VStack(alignment: .center, spacing: nil, content: {
                         Image(systemName: "list.bullet")
-                        Text("All Recipes")
+                        Text("Quick Recipess")
                     })
                 }
                 .tag(0)

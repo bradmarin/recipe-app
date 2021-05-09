@@ -27,7 +27,7 @@ struct ListView: View {
                     .buttonStyle(PlainButtonStyle())
                 }
             }
-            .navigationBarTitle(Text("All Recipes"))
+            .navigationBarTitle(Text("Quick Recipes"))
         }
     }
 }
