@@ -19,7 +19,7 @@ struct Recipe: Codable {
     
     let title, href, ingredients, thumbnail: String
     
-    var detail:  URL {
+    var detail: URL {
         URL(string: href)!
     }
     

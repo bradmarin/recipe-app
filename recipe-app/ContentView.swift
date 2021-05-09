@@ -15,18 +15,34 @@ struct ContentView: View {
                 .tabItem {
                     VStack(alignment: .center, spacing: nil, content: {
                         Image(systemName: "list.bullet")
-                        Text("Recipes")
+                        Text("All Recipes")
                     })
                 }
                 .tag(0)
-            FavoriteView()
+            BreakfastView()
                 .tabItem {
                     VStack(alignment: .center, spacing: nil, content: {
-                        Image(systemName: "suit.heart.fill")
-                        Text("Favorites")
+                        Image(systemName: "sunrise")
+                        Text("Breakfast")
                     })
                 }
                 .tag(1)
+            LunchView()
+                .tabItem {
+                    VStack(alignment: .center, spacing: nil, content: {
+                        Image(systemName: "sun.max.fill")
+                        Text("Lunch")
+                    })
+                }
+                .tag(2)
+            DinnerView()
+                .tabItem {
+                    VStack(alignment: .center, spacing: nil, content: {
+                        Image(systemName: "sunset.fill")
+                        Text("Dinner")
+                    })
+                }
+                .tag(3)
         }
     }
 }

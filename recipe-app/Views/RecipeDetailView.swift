@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RecipeDetailView: View {
     var recipe: Recipe
-    @State var favorite = false
     
     var body: some View {
         NavigationView {
@@ -46,32 +45,9 @@ struct RecipeDetailView: View {
             }
         }
         .navigationBarTitle(Text(recipe.title), displayMode: .inline)
-        .toolbar {
-            Toggle(isOn: $favorite, label: {
-                
-            })
             .padding()
-            .toggleStyle(favoriteStyle())
         }
     }
-}
-
-struct favoriteStyle: ToggleStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        return HStack {
-            configuration.label
-            
-            Spacer()
-            
-            Image(systemName: configuration.isOn ? "suit.heart.fill" : "suit.heart")
-                .foregroundColor(configuration.isOn ? .red : .gray)
-                .font(.system(size: 20, design: .default))
-                .onTapGesture {
-                    configuration.isOn.toggle()
-                }
-        }
-    }
-}
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
